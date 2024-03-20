@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
+
+
+*	{
+	padding: auto;
+}
+
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	padding: 0 0%;
+	margin: 0;
+	background: rgb(0,0,0);
+	background: linear-gradient(90deg, rgb(0, 0, 0) 0%, #430053, rgb(0, 0, 0) 100%);
+	color: white;
+}
+
+img {
+	width: 100px;
+	padding-top: 10;
+	padding-left: 10;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+	color: #ffffff;
+}
+
+
+h2	{
+	margin-left: 4%;
+}
+
+
+.profile span {
+	color: #cc00ff;
+}
+
+
+.sidenav {
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: -250px; /* Réglez la position initiale pour masquer la barre latérale sur la droite */
+	background-color: #e8e8e8;
+	padding-top: 40px;
+	transition: right 0.9s ease; /* Utilisez right au lieu de left */
+  }
+  
+
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sidenav a:hover {
+  color: #000000;
+}
+
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.sidenav.active {
+  right: 0;
+}
+
+
+.sidenav .close {
+	position: absolute;
+	top: 10;
+	right: 25px;
+	font-size: 36px;
+	transition: all 0.5s;
+}
+
+  
+.profileburger {
+	margin-left: auto; 
+	position: fixed;
+	top: 20px;
+	right: 30px;
+	z-index: 2;
+}
+
+  
+#openBtn {
+	cursor: pointer;
+}
+
+  
+.burger-icon span {
+	display: block;
+	width: 35px;
+	height: 5px;
+	background-color: white;
+	margin: 5px 0;
+}
+
+
+.page-content {
+	margin: 4%;
+}
+
+
+.page-content header {
+	margin-top: 5%;
+	max-width: 80%;
+}
+
+
+.page-content header h1 {
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 4vw;
+}
+
+
+.page-content header p {
+	line-height: 30px;
+	color: #ffffff;
+}
+
+
+.page-content header button {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	padding: 0;
+	font-size: 15px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+
+
+.page-content header button:hover {
+	color: #ccc;
+	border-bottom-color: #000;
+}
+
+
+.page-content .presentation-image {
+	margin-top: 5%;
+}
+
+
+.page-content .presentation-image img {
+	max-width: 100%;
+	height: 30%;
+}
+
+
+.page-content .projects-section {
+	margin-top: 6%;
+}
+
+
+.page-content .projects-section h1 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 3vw;
+}
+.page-content .projects-section .projects {
+	display: flex;
+	flex-wrap: wrap;
+}
+.page-content .projects-section .project {
+	margin-right: 20px;
+	max-width: 195px;
+}
+.page-content .projects-section .project h4 {
+	margin: 0;
+}
+.page-content .projects-section .project .description {
+	font-size: 10px;
+}
+.page-content .projects-section .project .dates {
+	font-size: 13px;
+	color: rgb(145, 145, 145);
+}
+
+
+@media screen and (max-width: 700px) {
+	nav {
+		justify-content: center;
+	}
+	nav ul {
+		display: none;
+	}
+
+	.page-content header {
+		margin-top: 10%;
+		max-width: 100%;
+	}
+	.page-content .projects-section {
+		margin-top: 15%;
+	}
+	.page-content .projects-section h1 {
+		font-size: 1.5em;
+	}
+	.page-content .projects-section .project {
+		margin-right: 0;
+		margin-bottom: 20px;
+		max-width: 100%;
+	}
+	.page-content .projects-section .project .description {
+		font-size: 13px;
+	}
+
+	footer {
+		justify-content: flex-start;
+	}
+	footer .column {
+		width: 80%;
+	}
+}
+
+/* 2eme PAGE */
+
+
+.cv {
+	text-align: center;
+}
+
+
+.cv embed {
+	width: 800;
+	height: 850;
+	align-items: center;
+}
+
+
+
+/* 3eme PAGE */
+
+.lm {
+	text-align: center;
+}
+
+.lm embed {
+	width: 800;
+	height: 850;
+	align-items: center;
+}
+
+/* 4eme PAGE */
+
+.page-content .projects-section .tp7 embed {
+	width: 850;
+	height: 800;
+}
+
+.page-content .projects-section .parking embed{
+	width: 850;
+	height: 800;
+}
+
+.page-content .projects-section .crosl embed{
+	width: 850;
+	height: 800;
+}
+
+.page-content .projects-section .tsrp embed{
+	width: 850;
+	height: 800;
+}
+
+
+
+
+/* 5eme PAGE */
+
+.stage embed {
+	width: 600;
+	height: 850;
+}
+
+.stage #monsite {
+	width: 900;
+	height: 850;
+	margin-left: 30px;
+}
+
+.stage p {
+	margin-left: 200px;
+}
+
+.stage a {
+	margin-left: 1000px;
+	color: #ffffff;
+}
+
+/* 6eme PAGE */
+
+.veille a {
+	color: white;
+}
+
+
+
